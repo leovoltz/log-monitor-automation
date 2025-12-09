@@ -1,3 +1,7 @@
+![Python Version](https://img.shields.io/badge/Python-3.10+-blue)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![Type](https://img.shields.io/badge/Type-Automation-blueviolet)
+
 # Log Monitoring & Automation System (Python)
 
 A small but practical log monitoring tool designed to simulate part of a NOC (Network Operations Center) workflow.  
