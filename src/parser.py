@@ -11,7 +11,7 @@ class LogEntry:
     level: str
     message: str
 
-
+# Regex to match log lines in the format:
 LOG_LINE_PATTERN = re.compile(
     r"^(?P<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}) \[(?P<level>[A-Z]+)\] (?P<message>.*)$"
 )
@@ -24,12 +24,12 @@ def parse_log_file(path: Path) -> List[LogEntry]:
         for line in f:
             line = line.strip()
             if not line:
-                continue  #skip empty row
+                continue  #skip empty lines
 
 
             match = LOG_LINE_PATTERN.match(line)
             if not match:
-                # finish it later
+                # optional: log or collect invalid lines for debugging
                 continue
 
             ts_str = match.group("timestamp")

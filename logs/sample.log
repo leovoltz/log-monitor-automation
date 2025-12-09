@@ -1,0 +1,6 @@
+2025-01-01 10:00:00 [INFO] Application started
+2025-01-01 10:01:10 [WARNING] High memory usage detected
+2025-01-01 10:02:35 [ERROR] Failed to connect to database
+2025-01-01 10:03:12 [INFO] Retrying database connection
+2025-01-01 10:03:45 [CRITICAL] Database unavailable for 5 minutes
+2025-01-01 10:04:00 [INFO] Application shutting down
